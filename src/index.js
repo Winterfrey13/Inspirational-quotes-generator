@@ -14,7 +14,7 @@ function generateQuote(event) {
   let apiKey = "0028ba044ca06fc2b3teda9ee7f81ob0";
   let prompt = `User's instructions: Generate two inspirational quotes about ${instructionsInput.value}`;
   let context =
-    "You are a skilled quote expert and love to write inspirational quotes. Your mission is to generate two random remarquable inspirational quote in basic HTML. Make sure to follow the user's instructions. Do not include a title to the quote. Sign the quote with `SheCodesAI` ONLY in a <br />, <small>, <em> and <strong> element";
+    "You are a skilled quote expert and love to write inspirational quotes. Your mission is to generate two random remarquable inspirational quote in basic HTML. Make sure to follow the user's instructions. Do not include a title to the quote. Sign with `SheCodesAI` ONLY in a <br /> and <strong> element";
 
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
