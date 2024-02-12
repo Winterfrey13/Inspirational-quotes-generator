@@ -24,13 +24,23 @@ h1 {
   color: #222543;
 }
 
-form {
-  padding: 30px;
+.form-container {
+  padding: 15px 20px;
   background-color: white;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   border-radius: 10px;
-  display: flex;
   margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+}
+
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  font-size: 12px;
+  opacity: 0.6;
 }
 
 .instructions {
@@ -61,6 +71,20 @@ form {
   line-height: 2;
   border-left: 3px solid rgba(88, 19, 58, 1);
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes blink {
+  40% {
+    opacity: 0.2;
+  }
+}
+
+.generating {
+  animation: blink 1s step-start 0s infinite;
 }
 
 .quote strong {
